@@ -50,7 +50,7 @@ The kit teaches two complementary frameworks. **Three Ms first, Four Cs second.*
 | **Method** | Find Constraint → EAD (Eliminate, Automate, Delegate) → Map Process → Pick Autonomy Level → Tie to KPI. |
 | **Machine** | Lego Principle, Validation Chain, Bike Method, Intern Rule, Kill Switch. *Boring is beautiful. Workflows beat agents.* |
 
-Full breakdown in `references/3ms-framework.md`. The `/level-up` skill walks you through all three weekly.
+Full breakdown in [[3ms-framework]]. The [[.claude/skills/level-up/SKILL|/level-up]] skill walks you through all three weekly.
 
 > *The Three Ms of AI™ is a trademark of Nate Herk. © 2026 Nate Herk.*
 
@@ -77,22 +77,22 @@ The kit is intentionally lean. Skills here are ideation prompts and thinking too
 
 | Skill | Type | When to run |
 |---|---|---|
-| `/onboard` | Setup wizard (one-time) | Day 1, immediately after clone. 7-question interview. Generates Day-1 file set + fills `CLAUDE.md`. |
-| `/audit` | Recurring thinking skill | Day 7, then weekly. Four-Cs gap report. Read-only. Watch the score climb. |
-| `/level-up` | Recurring thinking skill | Day 14, then weekly. Three Ms interview (Mindset → Method → Machine). One run = one shipped artifact. |
+| [[.claude/skills/onboard/SKILL\|/onboard]] | Setup wizard (one-time) | Day 1, immediately after clone. 7-question interview. Generates Day-1 file set + fills [[CLAUDE]]. |
+| [[.claude/skills/audit/SKILL\|/audit]] | Recurring thinking skill | Day 7, then weekly. Four-Cs gap report. Read-only. Watch the score climb. |
+| [[.claude/skills/level-up/SKILL\|/level-up]] | Recurring thinking skill | Day 14, then weekly. Three Ms interview (Mindset → Method → Machine). One run = one shipped artifact. |
 
-`/audit` asks *"is the AIOS built right?"* (form). `/level-up` asks *"what business leverage am I missing?"* (function). They work in series — fix structure first, then capability planning becomes meaningful.
+[[.claude/skills/audit/SKILL\|/audit]] asks *"is the AIOS built right?"* (form). [[.claude/skills/level-up/SKILL\|/level-up]] asks *"what business leverage am I missing?"* (function). They work in series — fix structure first, then capability planning becomes meaningful.
 
 ---
 
 ## Quick start
 
 1. **Clone the repo** to a working folder on your machine.
-2. **Open it in Claude Code** and run `/onboard`. Answer the 7 questions honestly. Voice samples must be pasted, not described. Takes ~15 minutes. Day-1 file set drops at the end.
-3. **Use it for a week.** Bring real questions. Make real decisions. Log them via `/decision` (or just append to `decisions/log.md`).
-4. **Day 7:** run `/audit`. Read the Four-Cs gap report. Pick one gap to close.
-5. **Day 14:** run `/level-up`. The Three Ms interview surfaces one automation worth building. Build it.
-6. **Week 3+:** weekly `/level-up` ritual. One shipped artifact per week.
+2. **Open it in Claude Code** and run [[.claude/skills/onboard/SKILL|/onboard]]. Answer the 7 questions honestly. Voice samples must be pasted, not described. Takes ~15 minutes. Day-1 file set drops at the end.
+3. **Use it for a week.** Bring real questions. Make real decisions. Log them via `/decision` (or just append to [[log]]).
+4. **Day 7:** run [[.claude/skills/audit/SKILL|/audit]]. Read the Four-Cs gap report. Pick one gap to close.
+5. **Day 14:** run [[.claude/skills/level-up/SKILL|/level-up]]. The Three Ms interview surfaces one automation worth building. Build it.
+6. **Week 3+:** weekly [[.claude/skills/level-up/SKILL|/level-up]] ritual. One shipped artifact per week.
 
 ---
 
@@ -120,7 +120,7 @@ AIS-OS/
         └── level-up/SKILL.md
 ```
 
-See `EXPANSIONS.md` for what to add as you grow (`projects/`, `templates/`, `scripts/`, `.claude/agents/`, sub-OS folders, etc.).
+See [[EXPANSIONS]] for what to add as you grow (`projects/`, `templates/`, `scripts/`, `.claude/agents/`, sub-OS folders, etc.).
 
 ---
 

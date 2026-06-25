@@ -11,7 +11,7 @@
 
 ## Why this is in your kit
 
-This framework is the operator brain you'll use every time you run `/level-up`. Three layers, each one builds on the last. Read it once, refer back as needed.
+This framework is the operator brain you'll use every time you run [[.claude/skills/level-up/SKILL|/level-up]]. Three layers, each one builds on the last. Read it once, refer back as needed.
 
 Here's the thing most people get wrong: they think AI automation is about tools. It's not. Tools change every six months. The platform you're using today might not exist next year. What doesn't change is how you THINK about automation, how you DECIDE what to automate, and how you BUILD and OPERATE the thing once it's running. That's what The Three Ms of AI™ gives you. A way to think that works regardless of platform, model, or hype cycle.
 

@@ -7,7 +7,7 @@ description: Use when someone asks for an AIOS audit, asks to score their setup 
 
 Runs the **Four Cs Audit** on the current Claude Code project. Reads (never writes) the project's operating manual, memory, skills, agents, MCPs, decisions, and references. Scores each of the Four Cs out of 25. Surfaces strengths and the top 3 leverage-weighted gaps with concrete next-step commands.
 
-**Scope is structural — "is the AIOS built right?"** It is NOT a capability planner. Capability gaps ("you could build a daily brief if you connected calendar") belong to `/level-up`. The audit answers: are the files, folders, registries, and connections in good shape?
+**Scope is structural — "is the AIOS built right?"** It is NOT a capability planner. Capability gaps ("you could build a daily brief if you connected calendar") belong to [[.claude/skills/level-up/SKILL|/level-up]]. The audit answers: are the files, folders, registries, and connections in good shape?
 
 First run is the baseline. Re-run weekly to watch the score climb. That's the compounding hook.
 

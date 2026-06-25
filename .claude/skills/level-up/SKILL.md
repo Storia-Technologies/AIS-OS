@@ -14,25 +14,25 @@ This is the brain-rewire mechanism. The kit doesn't need cron jobs to anchor beh
 
 ## What `/level-up` is NOT
 
-- Not `/audit`. `/audit` is structural ("is the AIOS built right?"). `/level-up` is functional ("what business leverage am I missing?"). Run `/audit` first if structure is messy.
+- Not [[.claude/skills/audit/SKILL|/audit]]. [[.claude/skills/audit/SKILL|/audit]] is structural ("is the AIOS built right?"). `/level-up` is functional ("what business leverage am I missing?"). Run [[.claude/skills/audit/SKILL|/audit]] first if structure is messy.
 - Not a multi-candidate planner. One run = one shipped artifact.
 - Not a coach. The user does the thinking. The skill conducts the interview.
 
 ## When `/level-up` runs
 
-- **First run: Day 14.** After the user has connected ≥1 MCP/script and run `/audit` once. Earlier yields trivial output.
+- **First run: Day 14.** After the user has connected ≥1 MCP/script and run [[.claude/skills/audit/SKILL|/audit]] once. Earlier yields trivial output.
 - **Cadence: weekly, Friday afternoon.** Review the week, surface one automation, ship Monday.
 - **On-demand any time.** Mid-week if a manual task itches.
 
 ## Inputs the skill reads
 
-- `context/priorities.md` — what the user said matters
-- `context/about-me.md` — top_pain, role
-- `connections.md` — what's reachable, by what mechanism
-- `references/3ms-framework.md` — the framework (used to quote principles back)
-- `decisions/log.md` — recent decisions (what's already shipped or considered)
+- [[priorities]] — what the user said matters
+- [[about-me]] — top_pain, role
+- [[connections]] — what's reachable, by what mechanism
+- [[3ms-framework]] — the framework (used to quote principles back)
+- [[log]] — recent decisions (what's already shipped or considered)
 - `.claude/skills/*/SKILL.md` frontmatter — what capabilities exist
-- Recent `audits/audit-{date}.md` if present
+- Recent `audits/audit-{date}.md` if present (e.g. [[audit-2026-06-24]])
 
 ## Execution — three phases
 
@@ -60,7 +60,7 @@ User picks one candidate. Walk the 5-step Method pipeline:
 **Step 1 — Find the constraint.** Which bottleneck does this solve, or which growth lever does it open? Tie back to Phase 1 answers.
 
 **Step 2 — EAD: Eliminate / Automate / Delegate.**
-- **Eliminate first:** *"What happens if we just stop doing this?"* If the answer is "nothing breaks" → skill exits cheerfully. *"Don't automate waste."* This is a win, log to `decisions/log.md` and stop.
+- **Eliminate first:** *"What happens if we just stop doing this?"* If the answer is "nothing breaks" → skill exits cheerfully. *"Don't automate waste."* This is a win, log to [[log]] and stop.
 - **Automate second:** apply 60/30/10 framing. ~60% deterministic, ~30% AI-assisted, ~10% manual.
 - **Delegate third:** if too complex/variable/judgment-heavy → suggest a person. Skill exits with a delegation suggestion, log it.
 
@@ -92,7 +92,7 @@ If the user can't articulate any of the five: *"If you can't explain it to a per
 
 Plus a specific metric (response time, error rate, conversion rate, time-to-completion). **If the user can't name a bucket and a metric, skill stops.** *"If your automation doesn't move a number, why are you building it?"*
 
-**Output of Phase 2:** scoped automation spec written to `decisions/log.md` as a dated entry with all five answers + autonomy level + KPI. Durable record of what was decided and why.
+**Output of Phase 2:** scoped automation spec written to [[log]] as a dated entry with all five answers + autonomy level + KPI. Durable record of what was decided and why.
 
 ### Phase 3 — Machine handoff (build it)
 
@@ -131,7 +131,7 @@ Surface the Machine principles when scaffolding:
 
 Every `/level-up` run produces:
 
-1. **One `decisions/log.md` entry** — dated, with the Method spec
+1. **One [[log]] entry** — dated, with the Method spec
 2. **One scaffolded artifact** — prompt, skill, or agent file
 3. **A one-screen close** — what was scoped, what was built, and the Bike Method Phase 1 reminder
 
@@ -144,7 +144,7 @@ Every `/level-up` run produces:
 5. **Boring-is-Beautiful default in Machine handoff.** Default = highest non-AI option.
 6. **Tie-to-KPI is mandatory.** If user can't name bucket + metric, skill stops.
 7. **Bike Method ships into every artifact.** `bike-method-phase: 1` in frontmatter.
-8. **Read-only on user files except `decisions/log.md` and the new artifact.** Don't modify other existing files.
+8. **Read-only on user files except [[log]] and the new artifact.** Don't modify other existing files.
 9. **Trademark + attribution on output.** Every report and every scaffolded artifact references the framework.
 
 ## Verification (for the implementer)

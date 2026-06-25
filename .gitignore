@@ -6,3 +6,7 @@ __pycache__/
 node_modules/
 .claude/settings.local.json
 audits/
+scripts/token_cache.json
+scripts/xero_token_cache.json
+.obsidian/
+business_brief.html
